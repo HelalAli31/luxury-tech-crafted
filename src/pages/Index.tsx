@@ -43,41 +43,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Details Section */}
-      <section className="px-4 py-16 bg-card/30" dir="rtl">
-        <div className="max-w-4xl mx-auto">
-          <h3 className="text-2xl font-bold text-center mb-8 text-primary">
-            📱 פרטי התקשרות
-          </h3>
-          
-          <div className="grid md:grid-cols-3 gap-6 text-center">
-            <div className="flex flex-col items-center gap-2">
-              <Phone className="w-8 h-8 text-primary" />
-              <p className="font-semibold">הלל</p>
-              <a href="tel:054-3596761" className="text-primary hover:text-primary-glow transition-colors">
-                054-3596761
-              </a>
-            </div>
-            
-            <div className="flex flex-col items-center gap-2">
-              <Phone className="w-8 h-8 text-primary" />
-              <p className="font-semibold">בדר</p>
-              <a href="tel:052-8938327" className="text-primary hover:text-primary-glow transition-colors">
-                052-8938327
-              </a>
-            </div>
-            
-            <div className="flex flex-col items-center gap-2">
-              <Phone className="w-8 h-8 text-primary" />
-              <p className="font-semibold">WhatsApp</p>
-              <a href="https://wa.me/972549598571" className="text-primary hover:text-primary-glow transition-colors">
-                054-9598571
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Services Section */}
       <section className="px-4 py-20" dir="rtl">
         <div className="max-w-6xl mx-auto">
@@ -162,6 +127,40 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Contact Details Section */}
+      <section className="px-4 py-16 bg-card/30" dir="rtl">
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-2xl font-bold text-center mb-8 text-primary">
+            📱 פרטי התקשרות
+          </h3>
+          
+          <div className="grid md:grid-cols-3 gap-6 text-center">
+            <div className="flex flex-col items-center gap-2">
+              <Phone className="w-8 h-8 text-primary" />
+              <p className="font-semibold">הלל</p>
+              <a href="tel:054-3596761" className="text-primary hover:text-primary-glow transition-colors">
+                054-3596761
+              </a>
+            </div>
+            
+            <div className="flex flex-col items-center gap-2">
+              <Phone className="w-8 h-8 text-primary" />
+              <p className="font-semibold">בדר</p>
+              <a href="tel:052-8938327" className="text-primary hover:text-primary-glow transition-colors">
+                052-8938327
+              </a>
+            </div>
+            
+            <div className="flex flex-col items-center gap-2">
+              <Mail className="w-8 h-8 text-primary" />
+              <p className="font-semibold">אימייל</p>
+              <a href="mailto:luxury.tech.development@gmail.com" className="text-primary hover:text-primary-glow transition-colors text-sm">
+                luxury.tech.development@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="px-4 py-8 text-center border-t border-primary/20">

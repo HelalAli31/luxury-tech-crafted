@@ -3,7 +3,7 @@ import { LuxuryButton } from '@/components/LuxuryButton';
 import { ServiceCard } from '@/components/ServiceCard';
 import { ContactForm } from '@/components/ContactForm';
 import { Card } from '@/components/ui/card';
-import { Phone, Mail, Star, Code, Settings, Users } from 'lucide-react';
+import { Phone, Mail, Star, Code, Settings, Users, MessageCircle } from 'lucide-react';
 import luxuryTechLogo from '@/assets/luxury-tech-logo.png';
 
 const Index = () => {
@@ -13,8 +13,48 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-dark">
+      {/* Top Navigation */}
+      <nav className="px-4 py-4" dir="rtl">
+        <div className="max-w-6xl mx-auto flex justify-between items-center">
+          {/* Contact Info - Left Side */}
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-2">
+              <Phone className="w-4 h-4 text-primary" />
+              <a href="tel:054-3596761" className="text-sm text-primary hover:text-primary-glow transition-colors">
+                הלל: 054-3596761
+              </a>
+            </div>
+            <div className="flex items-center gap-2">
+              <Phone className="w-4 h-4 text-primary" />
+              <a href="tel:052-8938327" className="text-sm text-primary hover:text-primary-glow transition-colors">
+                בדר: 052-8938327
+              </a>
+            </div>
+            <a 
+              href="https://wa.me/972549598571" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-lg transition-colors text-sm"
+            >
+              <MessageCircle className="w-4 h-4" />
+              WhatsApp
+            </a>
+          </div>
+          
+          {/* Action Buttons - Right Side */}
+          <div className="flex gap-3">
+            <LuxuryButton size="sm" onClick={scrollToContact}>
+              בקש הצעת מחיר
+            </LuxuryButton>
+            <LuxuryButton variant="secondary" size="sm">
+              צפה בעבודות
+            </LuxuryButton>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
-      <section className="relative px-4 py-20 text-center" dir="rtl">
+      <section className="relative px-4 py-16 text-center" dir="rtl">
         <div className="max-w-6xl mx-auto">
           <div className="luxury-fade-in mb-8">
             <img 
@@ -32,13 +72,8 @@ const Index = () => {
             אנחנו מפתחים אתרים, אפליקציות ומערכות חכמות שמותאמות בדיוק לצרכים של העסק שלך – עיצוב חדשני, קוד איכותי ותוצאות שמביאות לקוחות.
           </p>
           
-          <div className="flex gap-6 justify-center flex-wrap luxury-slide-up">
-            <LuxuryButton size="xl" onClick={scrollToContact}>
-              בקש הצעת מחיר
-            </LuxuryButton>
-            <LuxuryButton variant="secondary" size="xl">
-              צפה בעבודות שלנו
-            </LuxuryButton>
+          <div className="luxury-slide-up max-w-md mx-auto">
+            <ContactForm />
           </div>
         </div>
       </section>
@@ -113,54 +148,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section id="contact" className="px-4 py-20" dir="rtl">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
-            📞 רוצה אתר או אפליקציה שיקפיצו את העסק שלך קדימה?
-          </h2>
-          <p className="text-xl text-muted-foreground mb-12">
-            השאר פרטים ונחזור אליך בהקדם!
-          </p>
-          
-          <ContactForm />
-        </div>
-      </section>
-
-      {/* Contact Details Section */}
-      <section className="px-4 py-16 bg-card/30" dir="rtl">
-        <div className="max-w-4xl mx-auto">
-          <h3 className="text-2xl font-bold text-center mb-8 text-primary">
-            📱 פרטי התקשרות
-          </h3>
-          
-          <div className="grid md:grid-cols-3 gap-6 text-center">
-            <div className="flex flex-col items-center gap-2">
-              <Phone className="w-8 h-8 text-primary" />
-              <p className="font-semibold">הלל</p>
-              <a href="tel:054-3596761" className="text-primary hover:text-primary-glow transition-colors">
-                054-3596761
-              </a>
-            </div>
-            
-            <div className="flex flex-col items-center gap-2">
-              <Phone className="w-8 h-8 text-primary" />
-              <p className="font-semibold">בדר</p>
-              <a href="tel:052-8938327" className="text-primary hover:text-primary-glow transition-colors">
-                052-8938327
-              </a>
-            </div>
-            
-            <div className="flex flex-col items-center gap-2">
-              <Mail className="w-8 h-8 text-primary" />
-              <p className="font-semibold">אימייל</p>
-              <a href="mailto:luxury.tech.development@gmail.com" className="text-primary hover:text-primary-glow transition-colors text-sm">
-                luxury.tech.development@gmail.com
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="px-4 py-8 text-center border-t border-primary/20">

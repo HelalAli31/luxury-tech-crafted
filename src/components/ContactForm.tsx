@@ -8,9 +8,7 @@ import { useToast } from '@/hooks/use-toast';
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
-    phone: '',
-    message: ''
+    phone: ''
   });
   const { toast } = useToast();
 
@@ -21,7 +19,7 @@ export const ContactForm = () => {
       title: "הצעת המחיר נשלחה בהצלחה!",
       description: "נחזור אליך בהקדם האפשרי"
     });
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    setFormData({ name: '', phone: '' });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -32,8 +30,8 @@ export const ContactForm = () => {
   };
 
   return (
-    <Card className="p-8 bg-gradient-card border-primary/20 shadow-elegant max-w-md mx-auto">
-      <form onSubmit={handleSubmit} className="space-y-6" dir="rtl">
+    <Card className="p-6 bg-gradient-card border-primary/20 shadow-elegant max-w-md mx-auto">
+      <form onSubmit={handleSubmit} className="space-y-4" dir="rtl">
         <div>
           <Input
             name="name"
@@ -46,37 +44,17 @@ export const ContactForm = () => {
         </div>
         <div>
           <Input
-            name="email"
-            type="email"
-            placeholder="אימייל"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            className="bg-background/50 border-primary/30 focus:border-primary text-right"
-          />
-        </div>
-        <div>
-          <Input
             name="phone"
             type="tel"
             placeholder="טלפון"
             value={formData.phone}
             onChange={handleChange}
+            required
             className="bg-background/50 border-primary/30 focus:border-primary text-right"
           />
         </div>
-        <div>
-          <Textarea
-            name="message"
-            placeholder="ספר לנו על הפרויקט שלך..."
-            value={formData.message}
-            onChange={handleChange}
-            rows={4}
-            className="bg-background/50 border-primary/30 focus:border-primary text-right resize-none"
-          />
-        </div>
         <LuxuryButton type="submit" size="lg" className="w-full">
-          בקש הצעת מחיר
+          שלח
         </LuxuryButton>
       </form>
     </Card>

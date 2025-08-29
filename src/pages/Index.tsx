@@ -87,47 +87,42 @@ const Index = () => {
         className="h-20 w-auto mx-auto mb-6 animate-float"
       />
     </div>
-  <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 items-center">
-    
-    {/* Left - Helal */}
-    <div className="flex justify-center">
-  <img 
-  src="/assets/helal2.jpg" 
-  alt="Helal"
-   className="w-24 sm:w-32 md:w-48 lg:w-60 object-cover drop-shadow-[0_0_50px_rgba(255,255,255,0.6)]"
+  <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-8 items-center">
+  {/* Helal */}
+  <div className="flex justify-center order-1 md:order-1">
+    <img
+      src="/assets/helal2.jpg"
+      alt="Helal"
+      className="w-24 sm:w-32 md:w-48 lg:w-60 object-cover drop-shadow-[0_0_50px_rgba(255,255,255,0.6)]"
+    />
+  </div>
 
-/>
+  {/* Bader */}
+  <div className="flex justify-center order-2 md:order-3">
+    <img
+      src="/assets/bader2.jpg"
+      alt="Bader"
+      className="w-24 sm:w-32 md:w-48 lg:w-60 object-cover drop-shadow-[0_0_50px_rgba(255,255,255,0.6)]"
+    />
+  </div>
 
+  {/* Center - Title + Form */}
+  <div className="col-span-2 md:col-span-1 text-center order-3 md:order-2">
+    <h1 className="text-3xl md:text-6xl font-bold mb-6 luxury-fade-in bg-gradient-luxury bg-clip-text text-transparent leading-tight">
+      Luxury Tech – פיתוח אתרים ואפליקציות בהתאמה אישית
+    </h1>
 
+    <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed luxury-slide-up">
+      אנחנו מפתחים אתרים, אפליקציות ומערכות חכמות שמותאמות בדיוק לצרכים של העסק שלך –
+      עיצוב חדשני, קוד איכותי ותוצאות שמביאות לקוחות.
+    </p>
 
-    </div>
-
-    {/* Center - Title + Form */}
-    <div className="text-center">
-      <h1 className="text-3xl md:text-6xl font-bold mb-6 luxury-fade-in bg-gradient-luxury bg-clip-text text-transparent leading-tight">
-        Luxury Tech – פיתוח אתרים ואפליקציות בהתאמה אישית
-      </h1>
-
-      <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed luxury-slide-up">
-        אנחנו מפתחים אתרים, אפליקציות ומערכות חכמות שמותאמות בדיוק לצרכים של העסק שלך – 
-        עיצוב חדשני, קוד איכותי ותוצאות שמביאות לקוחות.
-      </p>
-
-      <div className="luxury-slide-up max-w-md mx-auto">
-        <ContactForm />
-      </div>
-    </div>
-
-    {/* Right - Bader */}
-    <div className="flex justify-center">
-     <img 
-  src="/assets/bader2.jpg" 
-  alt="bader"
-   className="w-24 sm:w-32 md:w-48 lg:w-60 object-cover drop-shadow-[0_0_50px_rgba(255,255,255,0.6)]"
-
-/>
+    <div className="luxury-slide-up max-w-md mx-auto">
+      <ContactForm />
     </div>
   </div>
+</div>
+
 </section>
 
 

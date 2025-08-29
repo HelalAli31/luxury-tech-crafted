@@ -17,7 +17,7 @@ import {
   Instagram,
   Facebook,
 } from "lucide-react";
-import luxuryTechLogo from "@/assets/luxury-tech-logo.png";
+
 
 const Index = () => {
   const scrollToContact = () => {
@@ -79,14 +79,22 @@ const Index = () => {
 
       {/* Hero Section */}
 <section className="relative px-4 py-16" dir="rtl">
+   
+    <div className="luxury-fade-in mb-8">
+      <img
+        src="/assets/luxury-tech-logo.png"
+        alt="Luxury Tech Logo"
+        className="h-20 w-auto mx-auto mb-6 animate-float"
+      />
+    </div>
   <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 items-center">
     
     {/* Left - Helal */}
     <div className="flex justify-center">
   <img 
-  src="/src/assets/helal2.jpg" 
+  src="/assets/helal2.jpg" 
   alt="Helal"
-  className="w-80 object-cover drop-shadow-[0_0_50px_rgba(255,255,255,0.6)]"
+  className="w-70 object-cover drop-shadow-[0_0_50px_rgba(255,255,255,0.6)]"
 />
 
 
@@ -95,7 +103,7 @@ const Index = () => {
 
     {/* Center - Title + Form */}
     <div className="text-center">
-      <h1 className="text-4xl md:text-6xl font-bold mb-6 luxury-fade-in bg-gradient-luxury bg-clip-text text-transparent leading-tight">
+      <h1 className="text-3xl md:text-6xl font-bold mb-6 luxury-fade-in bg-gradient-luxury bg-clip-text text-transparent leading-tight">
         Luxury Tech – פיתוח אתרים ואפליקציות בהתאמה אישית
       </h1>
 
@@ -112,7 +120,7 @@ const Index = () => {
     {/* Right - Bader */}
     <div className="flex justify-center">
      <img 
-  src="/src/assets/bader2.jpg" 
+  src="/assets/bader2.jpg" 
   alt="bader"
   className="w-100 object-cover drop-shadow-[0_0_50px_rgba(255,255,255,0.6)]"
 />
@@ -322,7 +330,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             <Card className="p-8 bg-gradient-card border-primary/20 text-center group hover:border-primary/40 transition-all duration-300 hover:shadow-luxury">
               <img 
-             src="/src/assets/helal.jpg" 
+             src="/assets/helal.jpg" 
              alt="Helal" 
             className="w-24 h-24 rounded-full mx-auto mb-6 object-cover shadow-lg"
              />
@@ -364,7 +372,7 @@ const Index = () => {
 
             <Card className="p-8 bg-gradient-card border-primary/20 text-center group hover:border-primary/40 transition-all duration-300 hover:shadow-luxury">
                <img 
-             src="/src/assets/bader.jpg" 
+             src="/assets/bader.jpg" 
              alt="bader" 
             className="w-24 h-24 rounded-full mx-auto mb-6 object-cover shadow-lg"
              />
@@ -551,7 +559,7 @@ const Index = () => {
             {/* Company Info */}
             <div className="md:col-span-2">
               <img
-                src={luxuryTechLogo}
+                src="/assets/luxury-tech-logo.png"
                 alt="Luxury Tech Logo"
                 className="h-12 w-auto mb-4"
               />

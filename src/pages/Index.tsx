@@ -94,7 +94,8 @@ const Index = () => {
   <img 
   src="/assets/helal2.jpg" 
   alt="Helal"
-  className="w-70 object-cover drop-shadow-[0_0_50px_rgba(255,255,255,0.6)]"
+   className="w-24 sm:w-32 md:w-48 lg:w-60 object-cover drop-shadow-[0_0_50px_rgba(255,255,255,0.6)]"
+
 />
 
 
@@ -122,7 +123,8 @@ const Index = () => {
      <img 
   src="/assets/bader2.jpg" 
   alt="bader"
-  className="w-100 object-cover drop-shadow-[0_0_50px_rgba(255,255,255,0.6)]"
+   className="w-24 sm:w-32 md:w-48 lg:w-60 object-cover drop-shadow-[0_0_50px_rgba(255,255,255,0.6)]"
+
 />
     </div>
   </div>

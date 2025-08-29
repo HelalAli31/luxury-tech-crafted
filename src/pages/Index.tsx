@@ -91,7 +91,7 @@ const Index = () => {
   {/* Helal */}
   <div className="flex justify-center order-1 md:order-1">
     <img
-      src="/assets/helal2.jpg"
+      src="/assets/helal4.jpg"
       alt="Helal"
       className="w-21 sm:w-32 md:w-48 lg:w-60 object-cover drop-shadow-[0_0_50px_rgba(255,255,255,0.6)]"
     />
@@ -327,7 +327,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             <Card className="p-8 bg-gradient-card border-primary/20 text-center group hover:border-primary/40 transition-all duration-300 hover:shadow-luxury">
               <img 
-             src="/assets/helal.jpg" 
+             src="/assets/helal3.jpg" 
              alt="Helal" 
             className="w-24 h-24 rounded-full mx-auto mb-6 object-cover shadow-lg"
              />

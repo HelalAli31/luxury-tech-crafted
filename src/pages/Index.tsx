@@ -78,30 +78,48 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative px-4 py-16 text-center" dir="rtl">
-        <div className="max-w-6xl mx-auto">
-          <div className="luxury-fade-in mb-8">
-            <img
-              src={luxuryTechLogo}
-              alt="Luxury Tech Logo"
-              className="h-20 w-auto mx-auto mb-6 animate-float"
-            />
-          </div>
+<section className="relative px-4 py-16" dir="rtl">
+  <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 items-center">
+    
+    {/* Left - Helal */}
+    <div className="flex justify-center">
+  <img 
+  src="/src/assets/helal2.jpg" 
+  alt="Helal"
+  className="w-80 object-cover drop-shadow-[0_0_50px_rgba(255,255,255,0.6)]"
+/>
 
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 luxury-fade-in bg-gradient-luxury bg-clip-text text-transparent leading-tight">
-            Luxury Tech – פיתוח אתרים ואפליקציות בהתאמה אישית
-          </h1>
 
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed luxury-slide-up">
-            אנחנו מפתחים אתרים, אפליקציות ומערכות חכמות שמותאמות בדיוק לצרכים של
-            העסק שלך – עיצוב חדשני, קוד איכותי ותוצאות שמביאות לקוחות.
-          </p>
 
-          <div className="luxury-slide-up max-w-md mx-auto">
-            <ContactForm />
-          </div>
-        </div>
-      </section>
+    </div>
+
+    {/* Center - Title + Form */}
+    <div className="text-center">
+      <h1 className="text-4xl md:text-6xl font-bold mb-6 luxury-fade-in bg-gradient-luxury bg-clip-text text-transparent leading-tight">
+        Luxury Tech – פיתוח אתרים ואפליקציות בהתאמה אישית
+      </h1>
+
+      <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed luxury-slide-up">
+        אנחנו מפתחים אתרים, אפליקציות ומערכות חכמות שמותאמות בדיוק לצרכים של העסק שלך – 
+        עיצוב חדשני, קוד איכותי ותוצאות שמביאות לקוחות.
+      </p>
+
+      <div className="luxury-slide-up max-w-md mx-auto">
+        <ContactForm />
+      </div>
+    </div>
+
+    {/* Right - Bader */}
+    <div className="flex justify-center">
+     <img 
+  src="/src/assets/bader2.jpg" 
+  alt="bader"
+  className="w-100 object-cover drop-shadow-[0_0_50px_rgba(255,255,255,0.6)]"
+/>
+    </div>
+  </div>
+</section>
+
 
       {/* Services Section */}
       <section className="px-4 py-20" dir="rtl">
@@ -205,14 +223,20 @@ const Index = () => {
                   </h3>
                   <p className="text-muted-foreground mb-4">
                     אפליקציית ניהול חדר כושר מתקדמת עם מערכת תשלומים ומעקב אחר
-                    מתאמנים
+                    מתאמנים.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
-                      React Native
+                      React 
                     </span>
                     <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
                       Node.js
+                    </span>
+                    <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
+                      express.js
+                    </span>
+                    <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
+                      mongoDB
                     </span>
                   </div>
                 </div>
@@ -234,14 +258,14 @@ const Index = () => {
                     חנות אונליין - The Fog Bank
                   </h3>
                   <p className="text-muted-foreground mb-4">
-                    פלטפורמת מכירות מקוונת מלאה עם מערכת הזמנות ותשלומים מאובטחת
+                    פלטפורמת מכירות מקוונת מלאה עם מערכת הזמנות ותשלומים מאובטחת.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
-                      React
+                      next.js
                     </span>
                     <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
-                      Stripe
+                      mongoDB
                     </span>
                   </div>
                 </div>
@@ -249,27 +273,33 @@ const Index = () => {
             </a>
 
             <a
-              href="https://thefogbank.online"
+              href="https://v0-tiling-project.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Card className="overflow-hidden bg-gradient-card border-primary/20 group hover:border-primary/40 transition-all duration-300 hover:shadow-luxury">
                 <div className="h-48 bg-gradient-luxury/20 flex items-center justify-center">
                   <div className="text-primary text-4xl font-bold opacity-50">
-                    CRM
+                    עבודות גמר
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-bold text-xl mb-2">מערכת ניהול לקוחות</h3>
+                  <h3 className="font-bold text-xl mb-2">Mo.al – עבודות גמר ושיפוצים</h3>
                   <p className="text-muted-foreground mb-4">
-                    פלטפורמה מתקדמת לניהול לקוחות, הזמנות ודוחות מפורטים
+                    פלטפורמה תדמיתית לחברת בנייה וריצוף, כולל עבודות צבע, טיח ושיפוצים כלליים.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
-                      Vue.js
+                      react
                     </span>
                     <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
                       MongoDB
+                    </span>
+                    <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
+                      express.js
+                    </span>
+                    <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
+                      node.js
                     </span>
                   </div>
                 </div>
@@ -291,9 +321,11 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             <Card className="p-8 bg-gradient-card border-primary/20 text-center group hover:border-primary/40 transition-all duration-300 hover:shadow-luxury">
-              <div className="w-24 h-24 bg-primary/20 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <Users className="w-12 h-12 text-primary" />
-              </div>
+              <img 
+             src="/src/assets/helal.jpg" 
+             alt="Helal" 
+            className="w-24 h-24 rounded-full mx-auto mb-6 object-cover shadow-lg"
+             />
               <h3 className="font-bold text-xl mb-2">הלאל</h3>
               <p className="text-primary mb-4">
                 Software Engineer | Full Stack Developer
@@ -310,7 +342,7 @@ const Index = () => {
               </div> */}
               <div className="flex flex-wrap justify-center gap-2">
                 <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
-                  React Native
+                  React 
                 </span>
                 <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
                   Node.js
@@ -318,13 +350,24 @@ const Index = () => {
                 <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
                   MongoDB
                 </span>
+                <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
+                  Express.js
+                </span>
+                <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
+                  Python
+                </span>
+                <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
+                 C
+                </span>
               </div>
             </Card>
 
             <Card className="p-8 bg-gradient-card border-primary/20 text-center group hover:border-primary/40 transition-all duration-300 hover:shadow-luxury">
-              <div className="w-24 h-24 bg-primary/20 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <Users className="w-12 h-12 text-primary" />
-              </div>
+               <img 
+             src="/src/assets/bader.jpg" 
+             alt="bader" 
+            className="w-24 h-24 rounded-full mx-auto mb-6 object-cover shadow-lg"
+             />
               <h3 className="font-bold text-xl mb-2">בדר</h3>
               <p className="text-primary mb-4">Software Engineer</p>
               <p className="text-muted-foreground mb-4">
@@ -339,13 +382,22 @@ const Index = () => {
               </div> */}
               <div className="flex flex-wrap justify-center gap-2">
                 <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
-                  React
+                  next.js
                 </span>
                 <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
-                  UI/UX
+                  JavaScript
                 </span>
                 <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
-                  TypeScript
+                  Node.js
+                </span>
+                <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
+                  MySQL
+                </span>
+                 <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
+                  Tailwind css
+                </span>
+                <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
+                  java
                 </span>
               </div>
             </Card>
@@ -430,10 +482,10 @@ const Index = () => {
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-bold">א</span>
+                  <span className="text-primary font-bold">ס</span>
                 </div>
                 <div>
-                  <p className="font-semibold">אלון כהן</p>
+                  <p className="font-semibold">סראג</p>
                   <p className="text-sm text-muted-foreground">
                     מנכ"ל חברת טכנולוגיה
                   </p>
@@ -453,10 +505,10 @@ const Index = () => {
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-bold">ר</span>
+                  <span className="text-primary font-bold">מ</span>
                 </div>
                 <div>
-                  <p className="font-semibold">רותי לוי</p>
+                  <p className="font-semibold">מיכא</p>
                   <p className="text-sm text-muted-foreground">
                     בעלת חנות אונליין
                   </p>
@@ -475,10 +527,10 @@ const Index = () => {
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-bold">ד</span>
+                  <span className="text-primary font-bold">ע</span>
                 </div>
                 <div>
-                  <p className="font-semibold">דני אברהם</p>
+                  <p className="font-semibold">עליסאת</p>
                   <p className="text-sm text-muted-foreground">
                     מנהל פיתוח עסקי
                   </p>
@@ -541,11 +593,11 @@ const Index = () => {
 
                 <div className="flex items-center gap-3">
                   <a
-                    href="mailto:luxury.tech.development@gmail.com"
+                    href="mailto:luxurytech30@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-3"
                   >
                     <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                    luxury.tech.development@gmail.com
+                    luxurytech30@gmail.com
                   </a>
                 </div>
 
@@ -563,7 +615,7 @@ const Index = () => {
 
                 <div className="flex items-center gap-3">
                   <a
-                    href="https://facebook.com/luxurytech" // שנה ללינק שלך
+                    href="https://www.facebook.com/profile.php?id=61579726990565" // שנה ללינק שלך
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-3"

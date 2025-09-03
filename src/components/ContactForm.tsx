@@ -12,7 +12,7 @@ export const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    hp: "", // honeypot (leave empty)
+    hp: "",
   });
 
   const handleChange = (e) => {
